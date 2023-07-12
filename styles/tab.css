@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    .logo{
+        height: 45px !important;
+    }
+    .dataStyle{
+        gap:1.5rem !important;
+    }
+    .carouselButtonStyle{
+        display: none;
+    }
+    .logoBox{
+        width: 5vw !important;
+      }
+      .desktopOfferCard5 img{
+        height: 190px !important;
+        width: -webkit-fill-available;
+      }
+}
+
+@media screen and (min-width: 768px) and (max-width: 870px){
+    .desktopOfferCard3{
+        padding: 15px !important;
+      }
+}
+
+@media screen and (min-width: 768px) and (max-width: 870px){
+    .categoryOfferCard3{
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .categoryOfferCard4{
+        width: 200px;
+      }
+      .categoryOfferCard5 img{
+        height: 200px;
+      }
+      .catagoryMenu {
+        gap: 15px !important;
+    }
+      .searchBox{
+        width:25vw;
+      }
+}
+
+@media screen and (min-width: 551px) and (max-width: 670px){
+
+  .categoryLinkTag{
+    width: 22vw;
+    min-width: 200px;
+    margin: 20px;
+  }
+  .categoryImages{
+    width: 100%;
+    margin: 20px;
+    border-radius: 25px;
+  }
+}
