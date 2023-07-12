@@ -92,9 +92,9 @@ const Cart = () => {
               <div className="cartProductName">{item.name}</div>
               <div className="cartProductPrice">
                 {item.discounted_price ? 
-                <span>{ item.totalDiscountedprice} ({item.discounted_price} for each)</span>
+                <span>{ item.totalDiscountedprice} <span>({item.discounted_price} for each)</span> </span>
                : 
-               <span>&#8377;{item.totalprice} (&#8377;{item.price} for each)</span>
+               <span>&#8377;{item.totalprice} <span className="eachItemPrice">(&#8377;{item.price} for each)</span> </span>
                
                }
               </div>

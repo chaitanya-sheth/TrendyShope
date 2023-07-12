@@ -714,6 +714,7 @@ Category page cards
 
 .emptyCartButton:hover{
   color: red;
+  max-width: 950px;
 }
 
 .cart-page-container{
@@ -742,4 +743,8 @@ Category page cards
 .cartProductPrice{
   padding: 10px;
   padding-left: 0;
+  font-weight: 600;
+}
+.eachItemPrice{
+  font-weight: 400 !important;
 }
