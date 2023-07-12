@@ -102,43 +102,16 @@ const Page = () => {
                       % off
                     </span>
                   </div>
-                  {isProductAdded(offer) ? (
-                          <div className="d_flex addToCartButton">
-                            <button
-                              className="d_flex justify_content_center align_items_center buttonEffect"
-                              onClick={() => handleRemoveFromBag(offer.id)}
-                            >
-                              <div>
-                                <HiMinus />
-                              </div>
-                            </button>
-                            <button className="d_flex justify_content_center align_items_center buttonEffect">
-                              <div>
-                              <HiOutlineShoppingBag/>
-                              {/* {clickCount} */}
-                              </div>
-                            </button>
+                   <div className="d_flex addToCartButton">
                             <button
                               className="d_flex justify_content_center align_items_center buttonEffect"
                               onClick={() => handleAddToBag(offer)}
                             >
                               <div>
-                                <HiPlus />
+                                <HiOutlineShoppingBag />Add to bag 
                               </div>
                             </button>
                           </div>
-                        ) : (
-                          <div className="d_flex addToCartButton">
-                            <button
-                              className="d_flex justify_content_center align_items_center buttonEffect"
-                              onClick={() => handleAddToBag(offer)}
-                            >
-                              <div>
-                                <HiOutlineShoppingBag />Add to bag
-                              </div>
-                            </button>
-                          </div>
-                        )}
                 </div>
               </div>
             </div>

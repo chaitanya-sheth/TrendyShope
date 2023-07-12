@@ -38,14 +38,12 @@ const DesktopOfferCards = ({ searchQuery }) => {
 
   const dispatch = useDispatch();
   const data = useSelector((state) => state.productData);
-  // console.warn("data in main component from saga ", data);
 
   useEffect(() => {
     dispatch(productList());
   }, []);
 
   const filteredData = Data.filter((item) => !item.discounted_price);
-
   
   const [addedProducts, setAddedProducts] = useState([]);
 
@@ -62,6 +60,8 @@ const DesktopOfferCards = ({ searchQuery }) => {
   };
 
   const isProductAdded = (item) => addedProducts.includes(item.id);
+
+
 
   return (
     <section className="desktopOfferCard">
@@ -89,7 +89,7 @@ const DesktopOfferCards = ({ searchQuery }) => {
                           </span>
                         </div>
                      
-                        {isProductAdded(item) ? (
+                        {/* {isProductAdded(item) ? (
                           <div className="d_flex addToCartButton">
                             <button
                               className="d_flex justify_content_center align_items_center buttonEffect"
@@ -101,8 +101,9 @@ const DesktopOfferCards = ({ searchQuery }) => {
                             </button>
                             <button className="d_flex justify_content_center align_items_center buttonEffect">
                               <div>
-                              <HiOutlineShoppingBag/>
+                              <HiOutlineShoppingBag/>      
                               </div>
+                           
                             </button>
                             <button
                               className="d_flex justify_content_center align_items_center buttonEffect"
@@ -120,11 +121,21 @@ const DesktopOfferCards = ({ searchQuery }) => {
                               onClick={() => handleAddToBag(item)}
                             >
                               <div>
-                                <HiOutlineShoppingBag />Add to bag
+                                <HiOutlineShoppingBag />Add to bag 
                               </div>
                             </button>
                           </div>
-                        )}
+                        )} */}
+                        <div className="d_flex addToCartButton">
+                            <button
+                              className="d_flex justify_content_center align_items_center buttonEffect"
+                              onClick={() => handleAddToBag(item)}
+                            >
+                              <div>
+                                <HiOutlineShoppingBag />Add to bag 
+                              </div>
+                            </button>
+                          </div>
                       </div>
                     </div>
                   </div>

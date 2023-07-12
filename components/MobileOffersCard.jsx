@@ -63,7 +63,7 @@ const MobileOffersCard = () => {
                     </span>
               </div>
 
-              {isProductAdded(item) == 0 ? (
+              {/* {isProductAdded(item) == 0 ? (
                 <div>
                             <button
                               className="mobileOfferCardButton1 d_flex"
@@ -102,7 +102,19 @@ const MobileOffersCard = () => {
                           </button>
                         </div>
                         
-                        )}
+                        )} */}
+                        <div>
+                            <button
+                              className="mobileOfferCardButton1 d_flex"
+                              onClick={() => handleAddToBag(item)}
+                            >
+                          
+                              <div>
+                                <HiOutlineShoppingBag />Add to bag
+                              </div>
+                            
+                            </button>
+                          </div>
             </div>
           </div>
         </div>
