@@ -39,6 +39,7 @@ const Cart = () => {
           img: item.img,
           quantity: 1,
           discounted_price: item.discounted_price,
+          url:item.url,
         });
       }
     }
@@ -98,7 +99,7 @@ const Cart = () => {
         mergedCartData.map((item) => (
           <div key={item.id} style={{marginBottom:"5vh"}} className="d_flex">
             <div className="cartImageSection">
-             {item.quantity>0 && <img src={item.img} className="cartImage" alt="image"></img>}
+             {item.quantity>0 && <Link href={item.url}><img src={item.img} className="cartImage" alt="image"></img></Link>}
             </div>
             <div className="cartDetailSection">
               <div className="cartProductName">{item.name}</div>
