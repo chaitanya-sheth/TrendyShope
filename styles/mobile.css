@@ -840,4 +840,13 @@ margin-left: 5px;
     font-size: 15px;
     font-weight: 600;
   }
+  .emptyCartImage{
+    width: 60vw;
+  }
+  .shopNowButton{
+    border-radius: 10px;
+  }
+  .emptyCartRightSection{
+    padding:5px;
+  }
 }

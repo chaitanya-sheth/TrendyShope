@@ -748,3 +748,26 @@ Category page cards
 .eachItemPrice{
   font-weight: 400 !important;
 }
+.emptyCartImage{
+  width: 80vw;
+  max-width: 450px;
+}
+.emptyCartText{
+  color: rgb(199 31 31);
+  margin-bottom: 10px;
+}
+.shopNowButton{
+  width: 20vw;
+  color: white;
+  text-align: center;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  max-width: 120px;
+  cursor: pointer;
+}
+.emptyCartRightSection{
+  padding: 40px;
+}

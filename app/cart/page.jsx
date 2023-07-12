@@ -9,6 +9,7 @@ import { removeFromCart } from "@/redux/action";
 import "../../styles/desktop.css";
 import "../../styles/globals.css";
 import "../../styles/mobile.css";
+import Link from "next/link";
 const Cart = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.productData);
@@ -19,7 +20,6 @@ const Cart = () => {
 
   const cartData = useSelector((state) => state.cartData);
   console.log("From cart Page", cartData);
-
   const mergeCartItems = (data) => {
     const mergedItems = [];
 
@@ -72,6 +72,9 @@ const Cart = () => {
   const handleRemoveFromBag = (item) => {
     dispatch(removeFromCart(item));
   };
+
+  const isCartEmpty = mergedCartData.length === 0;
+  
   return (
     <div>
       <div className="cart-page-container d_flex flex_col">
@@ -82,8 +85,17 @@ const Cart = () => {
         >
           Deselect All Items
         </button>
-
-        {mergedCartData.map((item) => (
+        {isCartEmpty ? (
+          <div className="d_flex justify_content_center w_100 ">
+           <img className="emptyCartImage" src="/emptyCart.jpeg"></img>
+           <div className="emptyCartRightSection">
+           <h5 className="emptyCartText">Your Cart is Empty</h5>
+           <Link href="/"><button className="shopNowButton">Shop Now</button></Link>
+           </div>
+           
+           </div>
+        ) : (
+        mergedCartData.map((item) => (
           <div key={item.id} style={{marginBottom:"5vh"}} className="d_flex">
             <div className="cartImageSection">
              {item.quantity>0 && <img src={item.img} className="cartImage" alt="image"></img>}
@@ -113,7 +125,7 @@ const Cart = () => {
               </div>
             </div>
           </div>
-        ))}
+        )))}
 
         {/* <td className="cartTotalLabel">Total</td>
                 <td className="cartTotalAmount" colSpan="2">
