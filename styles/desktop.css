@@ -167,6 +167,7 @@ li a {
 }
 
 .searchBox {
+  background-color: white;
   height: 36px;
   width: 32vw;
   padding-top: 0.75rem /* 12px */;
