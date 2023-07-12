@@ -8,7 +8,7 @@ import { addToCart } from "@/redux/action";
 import { removeFromCart } from "@/redux/action";
 import "../../styles/desktop.css";
 import "../../styles/globals.css";
-
+import "../../styles/mobile.css";
 const Cart = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.productData);
