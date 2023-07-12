@@ -827,26 +827,26 @@ margin-left: 5px;
     margin-right: 10px;
   }
   .cartImage{
-    height: 140px;
+    height: 140px !important;
     width: -webkit-fill-available;
   }
   .cartDetailSection{
-    width: 70vw;
+    width: 70vw !important;
   }
   .cartProductName{
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .cartProductPrice{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 15px !important;
+    font-weight: 600 !important;
   }
   .emptyCartImage{
-    width: 60vw;
+    width: 60vw !important;
   }
   .shopNowButton{
-    border-radius: 10px;
+    border-radius: 10px !important;
   }
   .emptyCartRightSection{
-    padding:5px;
+    padding:5px !important;
   }
 }
